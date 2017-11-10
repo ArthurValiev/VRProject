@@ -1,0 +1,625 @@
+fileFormatVersion: 2
+guid: ff4c0fea83419914e9e01db26ce5cb48
+timeCreated: 1510179687
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Yandex-Images-2017-11-09_0
+    21300002: Yandex-Images-2017-11-09_1
+    21300004: Yandex-Images-2017-11-09_2
+    21300006: Yandex-Images-2017-11-09_3
+    21300008: Yandex-Images-2017-11-09_4
+    21300010: Yandex-Images-2017-11-09_5
+    21300012: Yandex-Images-2017-11-09_6
+    21300014: Yandex-Images-2017-11-09_7
+    21300016: Yandex-Images-2017-11-09_8
+    21300018: Yandex-Images-2017-11-09_9
+    21300020: Yandex-Images-2017-11-09_10
+    21300022: Yandex-Images-2017-11-09_11
+    21300024: Yandex-Images-2017-11-09_12
+    21300026: Yandex-Images-2017-11-09_13
+    21300028: Yandex-Images-2017-11-09_14
+    21300030: Yandex-Images-2017-11-09_15
+    21300032: Yandex-Images-2017-11-09_16
+    21300034: Yandex-Images-2017-11-09_17
+    21300036: Yandex-Images-2017-11-09_18
+    21300038: Yandex-Images-2017-11-09_19
+    21300040: Yandex-Images-2017-11-09_20
+    21300042: Yandex-Images-2017-11-09_21
+    21300044: Yandex-Images-2017-11-09_22
+    21300046: Yandex-Images-2017-11-09_23
+    21300048: Yandex-Images-2017-11-09_24
+    21300050: Yandex-Images-2017-11-09_25
+    21300052: Yandex-Images-2017-11-09_26
+    21300054: Yandex-Images-2017-11-09_27
+    21300056: Yandex-Images-2017-11-09_28
+    21300058: Yandex-Images-2017-11-09_29
+    21300060: Yandex-Images-2017-11-09_30
+    21300062: Yandex-Images-2017-11-09_31
+    21300064: Yandex-Images-2017-11-09_32
+    21300066: Yandex-Images-2017-11-09_33
+    21300068: Yandex-Images-2017-11-09_34
+    21300070: Yandex-Images-2017-11-09_35
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_4
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_5
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_6
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_7
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_8
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 810
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_10
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_12
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_14
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_15
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_16
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_17
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 540
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_19
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_22
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_23
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_24
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_25
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_26
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 270
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_28
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_29
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_30
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_31
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_32
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_33
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_34
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yandex-Images-2017-11-09_35
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 213.33333
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
