@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.72472435, g: 0.62414026, b: 0.6007593, a: 1}
+  m_IndirectSpecularColor: {r: 0.7245687, g: 0.6245435, b: 0.6006107, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1226,7 +1226,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 1
   m_Size: {x: 16.933334, y: 8.466667}
@@ -1400,7 +1400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1241b6d17e7c341e08914fc2ed5f4a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 3
 --- !u!114 &974697222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,7 +1590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1241b6d17e7c341e08914fc2ed5f4a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 3
 --- !u!1001 &1142876926
 Prefab:
   m_ObjectHideFlags: 0
@@ -2516,7 +2514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1241b6d17e7c341e08914fc2ed5f4a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
 --- !u!114 &1752842721
 MonoBehaviour:
   m_ObjectHideFlags: 0
