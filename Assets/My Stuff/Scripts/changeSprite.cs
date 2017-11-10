@@ -9,7 +9,7 @@ public class changeSprite : MonoBehaviour
     public Sprite[] spr;
     //public GameObject kysok;
     //private int count = 0;
-    //private GameObject kysok;
+    private GameObject kysok;
     private GameObject tekyw;
     //private GameObject belyi;
     int nomer = -1;
@@ -31,7 +31,7 @@ public class changeSprite : MonoBehaviour
     public void On_Click_Button()
     {
         GameObject pl = GameObject.Find("Player");
-        GameObject kysok = pl.transform.Find("piece").gameObject;
+        kysok = pl.transform.Find("piece").gameObject;
 
         Debug.Log(kysok.name);
 
@@ -134,6 +134,7 @@ public class changeSprite : MonoBehaviour
             if (nomerBel == nomer)
             { //-delau
                 hit.transform.gameObject.SetActive(false);
+				kysok.SetActive (false);
             }
         }
         /*else
