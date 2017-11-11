@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections;
 using System;
+using System.Collections.Generic;
 
 public class changeSprite : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class changeSprite : MonoBehaviour
 
     //private int layerMask = 1 << 8;
     private int layerMask = 1 << 8; //0 | 1 << 1 | 1 << 2 | 1 << 3 | 1 << 4 | 1 << 5;
+	private List<int> usedPuzz = new List<int>();
+
 
 
 
@@ -33,46 +36,50 @@ public class changeSprite : MonoBehaviour
         GameObject pl = GameObject.Find("Player");
         kysok = pl.transform.Find("piece").gameObject;
 
-        Debug.Log(kysok.name);
+        //Debug.Log(kysok.name);
 
-        if (kysok.activeSelf == false)
-        { //если др. картинка в дан. момент не отображается
+		if (kysok.activeSelf == false) //если др. картинка в дан. момент не отображается
+        { 
 
-            kysok.SetActive(true);
+            //kysok.SetActive(true); - staroe mesto
 
             /*Vector3 pos = GameObject.Find("CanvasMenu").transform.position;
             pos.y += 1f;
             kysok.transform.position = pos;*/
 
-            Vector3 pos = GameObject.Find("Reticle").transform.position;
+            /*Vector3 pos = GameObject.Find("Reticle").transform.position; - staroe mesto
             pos.y += 1f;
-            kysok.transform.position = pos;
+            kysok.transform.position = pos;*/
 
 
             //выставляем картинку на кусочек
             GameObject o = EventSystem.current.currentSelectedGameObject;
             string str = o.name;
             int.TryParse(str, out nomer);
-            Debug.Log(nomer);
+            //Debug.Log(nomer);
 
-            if (nomer - 1 <= spr.Length)
+			if (nomer - 1 <= spr.Length && !usedPuzz.Contains(nomer)) 
             {
                 kysok.GetComponent<SpriteRenderer>().sprite = spr[nomer - 1];
                 kysok.GetComponent<SpriteRenderer>().size = new Vector3(16.93333f, 8.466667f);
-            }
-            else
-            {
-                Debug.Log("wrong nomer");
-            }
+				//kysok.GetComponent<SpriteRenderer>().flipX = true;
 
-            //высветляем кусочек из инвентаря
-            Color myCol = new Color(1F, 1F, 1F, 0.5F);
-            var button = o.GetComponent<Button>();
-            var colors = button.colors;
-            colors.normalColor = myCol;
-            EventSystem.current.currentSelectedGameObject.GetComponent<Button>().colors = colors;
+				Vector3 pos = GameObject.Find("Reticle").transform.position;
+				pos.y += 1f;
+				kysok.transform.position = pos;
 
-            tekyw = o; //запоминает какая картинка стоит
+				kysok.SetActive(true);
+            
+
+            	//высветляем кусочек из инвентаря
+            	Color myCol = new Color(1F, 1F, 1F, 0.5F);
+            	var button = o.GetComponent<Button>();
+            	var colors = button.colors;
+            	colors.normalColor = myCol;
+            	EventSystem.current.currentSelectedGameObject.GetComponent<Button>().colors = colors;
+
+            	tekyw = o; //запоминает какая картинка стоит
+			}
 
         }
         else
@@ -131,10 +138,15 @@ public class changeSprite : MonoBehaviour
 
             //Debug.Log("nomer = " + nomer + ", nomerBel = " + nomerBel);
 
-            if (nomerBel == nomer)
-            { //-delau
+			if (nomerBel == nomer)
+            { 
                 hit.transform.gameObject.SetActive(false);
 				kysok.SetActive (false);
+				usedPuzz.Add(nomer); 
+
+				if (usedPuzz.Count == spr.Length) {
+					Debug.Log ("You are win!"); // сюда вставляем показ видео / переход к новой сцене
+				}
             }
         }
         /*else
