@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: 61af9217944794d18adf656762e7b191
+timeCreated: 1510059279
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: StreetView_0
+    21300002: StreetView_1
+    21300004: StreetView_2
+    21300006: StreetView_3
+    21300008: StreetView_4
+    21300010: StreetView_5
+    21300012: StreetView_6
+    21300014: StreetView_7
+    21300016: StreetView_8
+    21300018: StreetView_9
+    21300020: StreetView_10
+    21300022: StreetView_11
+    21300024: StreetView_12
+    21300026: StreetView_13
+    21300028: StreetView_14
+    21300030: StreetView_15
+    21300032: StreetView_16
+    21300034: StreetView_17
+    21300036: StreetView_18
+    21300038: StreetView_19
+    21300040: StreetView_20
+    21300042: StreetView_21
+    21300044: StreetView_22
+    21300046: StreetView_23
+    21300048: StreetView_24
+    21300050: StreetView_25
+    21300052: StreetView_26
+    21300054: StreetView_27
+    21300056: StreetView_28
+    21300058: StreetView_29
+    21300060: StreetView_30
+    21300062: StreetView_31
+    21300064: StreetView_32
+    21300066: StreetView_33
+    21300068: StreetView_34
+    21300070: StreetView_35
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StreetView_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4233.3335
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_1
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 4233.3335
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -365.19092, y: -173.17041}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_2
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 4233.3335
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_3
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 4233.3335
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_4
+      rect:
+        serializedVersion: 2
+        x: 6772
+        y: 4233.3335
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_5
+      rect:
+        serializedVersion: 2
+        x: 8465
+        y: 4233.3335
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.50632}
+        - {x: 846.6667, y: -422.50632}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3387.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_7
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 3387.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_8
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 3387.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_9
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 3387.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_10
+      rect:
+        serializedVersion: 2
+        x: 6772
+        y: 3387.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_11
+      rect:
+        serializedVersion: 2
+        x: 8465
+        y: 3387.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.66678}
+        - {x: 846.6667, y: -422.66678}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2541.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_13
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 2541.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_14
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 2541.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_15
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 2541.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_16
+      rect:
+        serializedVersion: 2
+        x: 6772
+        y: 2541.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_17
+      rect:
+        serializedVersion: 2
+        x: 8465
+        y: 2541.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.82697}
+        - {x: 846.6667, y: -422.82697}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1695.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_19
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 1695.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_20
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 1695.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_21
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 1695.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_22
+      rect:
+        serializedVersion: 2
+        x: 6772
+        y: 1695.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_23
+      rect:
+        serializedVersion: 2
+        x: 8465
+        y: 1695.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -422.98715}
+        - {x: 846.6667, y: -422.98715}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 849.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_25
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 849.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_26
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 849.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_27
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 849.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_28
+      rect:
+        serializedVersion: 2
+        x: 6772
+        y: 849.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_29
+      rect:
+        serializedVersion: 2
+        x: 8465
+        y: 849.3333
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.14716}
+        - {x: 846.6667, y: -423.14716}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.333313
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_31
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 3.333313
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_32
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 3.333313
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -845.6797, y: 423.33334}
+        - {x: -845.6797, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_33
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 3.333313
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_34
+      rect:
+        serializedVersion: 2
+        x: 6772
+        y: 3.333313
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StreetView_35
+      rect:
+        serializedVersion: 2
+        x: 8465
+        y: 3.333313
+        width: 1693.3334
+        height: 846.6667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      physicsShape:
+      - - {x: -846.6667, y: 423.33334}
+        - {x: -846.6667, y: -423.3073}
+        - {x: 846.6667, y: -423.3073}
+        - {x: 846.6667, y: 423.33334}
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
