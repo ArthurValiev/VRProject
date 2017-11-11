@@ -36,6 +36,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.mp4
 
 # ============ #
 # OS generated #

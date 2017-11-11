@@ -123,7 +123,7 @@ public class changeSprite : MonoBehaviour
 
 				estLiKys = false;
 				dragKys = false;
-				Debug.Log ("нажатие на инвентарь" + dragKys);
+				//Debug.Log ("нажатие на инвентарь" + dragKys);
             }
         }
     }
@@ -133,10 +133,10 @@ public class changeSprite : MonoBehaviour
     {
         //layerMask = ~layerMask;
         everything = GameObject.Find("Everything");
-        video = GameObject.Find("VideoSphere");
+        //video = GameObject.Find("VideoSphere");
 
-        video.SetActive(true);
-        video.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
+        //video.SetActive(true);
+        //video.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
 
     }
 
@@ -167,14 +167,17 @@ public class changeSprite : MonoBehaviour
 				Destroy (kysok);
 				estLiKys = false;
 				dragKys = false;
-				Debug.Log ("удаление от белой" + dragKys);
+				//Debug.Log ("удаление от белой" + dragKys);
 				usedPuzz.Add(nomer); 
 
-				if (usedPuzz.Count == spr.Length) {
+				if (usedPuzz.Count == 2/*spr.Length*/) {
 					Debug.Log ("You are win!");// сюда вставляем показ видео / переход к новой сцене
                     everything.SetActive(false);
+					GameObject video0 = GameObject.Find("Video");
+					GameObject video = video0.transform.Find("VideoSphere").gameObject;
                     video.SetActive(true);
-                    video.GetComponent<VideoPlayerReference>().player.Play();
+                    //video.GetComponent<VideoPlayerReference>().player.Play();
+					video.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
 				}
             }
 
@@ -194,7 +197,7 @@ public class changeSprite : MonoBehaviour
 	public void On_Click_Kysok()
 	{
 		dragKys = !dragKys;
-		Debug.Log ("живой клик" + dragKys);
+		//Debug.Log ("живой клик" + dragKys);
 	}
 }
 
