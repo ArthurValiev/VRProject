@@ -10,13 +10,15 @@ public class changeSprite : MonoBehaviour
     public Sprite[] spr;
 	//public GameObject prehab;
 	private bool estLiKys = false;
+	public static bool dragKys = false;
+	//private int kysClick = 0;
     //public GameObject kysok;
     //private int count = 0;
     private GameObject kysok;
     private GameObject tekyw;
     //private GameObject belyi;
-    int nomer = -1;
-    int nomerBel;
+    private int nomer = -1;
+    private int nomerBel;
 
     //private int layerMask = 1 << 8;
     private int layerMask = 1 << 8; //0 | 1 << 1 | 1 << 2 | 1 << 3 | 1 << 4 | 1 << 5;
@@ -63,7 +65,9 @@ public class changeSprite : MonoBehaviour
 			
 
 				kysok.GetComponent<SpriteRenderer>().sprite = spr[nomer - 1];
-                kysok.GetComponent<SpriteRenderer>().size = new Vector3(16.93333f, 8.466667f);
+                //kysok.GetComponent<SpriteRenderer>().size = new Vector3(16.93333f, 8.466667f);
+				kysok.GetComponent<SpriteRenderer>().size = new Vector3(8.93333f, 4.466667f);
+
 				//kysok.GetComponent<SpriteRenderer>().flipX = true;
 
 
@@ -97,6 +101,8 @@ public class changeSprite : MonoBehaviour
                 EventSystem.current.currentSelectedGameObject.GetComponent<Button>().colors = colors;
 
 				estLiKys = false;
+				dragKys = false;
+				Debug.Log ("нажатие на инвентарь" + dragKys);
             }
         }
     }
@@ -134,17 +140,24 @@ public class changeSprite : MonoBehaviour
 
             //Debug.Log("nomer = " + nomer + ", nomerBel = " + nomerBel);
 
-			if (nomerBel == nomer)
+			if (nomerBel == nomer && dragKys)
             { 
                 hit.transform.gameObject.SetActive(false);
 				Destroy (kysok);
 				estLiKys = false;
+				dragKys = false;
+				Debug.Log ("удаление от белой" + dragKys);
 				usedPuzz.Add(nomer); 
 
 				if (usedPuzz.Count == spr.Length) {
 					Debug.Log ("You are win!"); // сюда вставляем показ видео / переход к новой сцене
 				}
             }
+
+			GameObject ob = EventSystem.current.currentSelectedGameObject;
+			//Debug.Log (ob.name);
+
+
         }
         /*else
         {
@@ -152,5 +165,12 @@ public class changeSprite : MonoBehaviour
             //Debug.Log(hit.transform.name);
         }*/
     }
+
+
+	public void On_Click_Kysok()
+	{
+		dragKys = !dragKys;
+		Debug.Log ("живой клик" + dragKys);
+	}
 }
 
