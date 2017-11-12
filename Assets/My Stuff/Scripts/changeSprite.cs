@@ -10,7 +10,9 @@ public class changeSprite : MonoBehaviour
     public Sprite[] spr;
 	private bool estLiKys = false;
 	public static bool dragKys = false;
-	private bool looking;
+	//private bool looking;
+	private float timeGone = 0.0f;
+	private float enough = 3.0f;
     private GameObject kysok;
     private GameObject tekyw;
     private int nomer = -1;
@@ -20,6 +22,8 @@ public class changeSprite : MonoBehaviour
     GameObject video;
 	GameObject o;
 	Vector3 pos;
+	int prevLook = 0;
+	float timeGoneWrong = 0f;
 
     private int layerMask = 1 << 8;
 	private List<int> usedPuzz = new List<int>();
@@ -128,39 +132,69 @@ public class changeSprite : MonoBehaviour
 				string str = hit.transform.name;
 				int.TryParse (str, out nomerBel);
 
-				if ((nomerBel == nomer) && dragKys) {
+				if (/*!looking &&*/ nomerBel == nomer) {
+					//looking = true;
+					timeGone += Time.deltaTime;
+					//Debug.Log ("смотрю, timeGone = " + timeGone);
+					Debug.Log ("смотрю");
+				}
+
+				if (prevLook == nomerBel && nomerBel != nomer) {
+					timeGoneWrong += Time.deltaTime;
+				} else {
+					timeGoneWrong = 0.0f;
+				}
+
+				prevLook = nomerBel;
+
+			} else {
+				//looking = false;
+				timeGone = 0.0f;
+				timeGoneWrong = 0.0f;
+				Debug.Log("не смотрю");
+			}
+
+			if (timeGoneWrong >= enough) {
+				Debug.Log("Плохое место!");
+				//float speed = 1f;
+				//kysok.transform.position.x = Mathf.Sin(Time.time * speed);
+				timeGoneWrong = 0.0f;
+
+			}
+
+			if (timeGone >= enough /*&& looking*/) {
                 
-					hit.transform.gameObject.SetActive (false);
+				hit.transform.gameObject.SetActive (false);
 
-					Destroy (kysok);
-					estLiKys = false;
-					dragKys = false;
-					//Debug.Log ("удаление от белой" + dragKys);
-					usedPuzz.Add (nomer); 
+				Destroy (kysok);
+				estLiKys = false;
+				dragKys = false;
+				//Debug.Log ("удаление от белой" + dragKys);
+				usedPuzz.Add (nomer); 
+				timeGone = 0.0f;
 
-					Color myCol2 = new Color (0F, 0F, 0F, 0.3F);
-					var button2 = tekyw.GetComponent<Button> ();
-					var colors2 = button2.colors;
-					colors2.normalColor = myCol2;
-					tekyw.GetComponent<Button> ().colors = colors2;
+				Color myCol2 = new Color (0F, 0F, 0F, 0.3F);
+				var button2 = tekyw.GetComponent<Button> ();
+				var colors2 = button2.colors;
+				colors2.normalColor = myCol2;
+				tekyw.GetComponent<Button> ().colors = colors2;
 
-					if (usedPuzz.Count == spr.Length) {
-						Debug.Log ("You are win!");// сюда вставляем показ видео / переход к новой сцене
-						everything.SetActive (false);
-						GameObject video0 = GameObject.Find ("Video");
-						video = video0.transform.Find ("VideoSphere").gameObject;
-						video.SetActive (true);
-						video.GetComponent<UnityEngine.Video.VideoPlayer> ().Play ();
-					}
+				if (usedPuzz.Count == spr.Length) {
+					Debug.Log ("You are win!");// сюда вставляем показ видео / переход к новой сцене
+					everything.SetActive (false);
+					GameObject video0 = GameObject.Find ("Video");
+					video = video0.transform.Find ("VideoSphere").gameObject;
+					video.SetActive (true);
+					video.GetComponent<UnityEngine.Video.VideoPlayer> ().Play ();
 				}
 				
 				//GameObject ob = EventSystem.current.currentSelectedGameObject;
 			}
 		}
 
-		Debug.DrawRay (Camera.main.transform.position, Camera.main.transform.forward, Color.magenta);
+		//Debug.DrawRay (Camera.main.transform.position, Camera.main.transform.forward, Color.magenta);
 
-		Ray camRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward); 
+		/*Ray camRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward); - рабочий скрипт с поворотом, но есть проблема (не удаляй пока!)
 		RaycastHit hit2;
 		GameObject menu = GameObject.Find ("CanvasMenu");
 
@@ -168,7 +202,7 @@ public class changeSprite : MonoBehaviour
 
 			string str2 = hit2.transform.name;
 			int.TryParse(str2, out nomerBel2);
-			Debug.Log ("люб стена");
+			//Debug.Log ("люб стена");
 		}
 
 		if (nomerBel2 < 10) {
@@ -182,20 +216,22 @@ public class changeSprite : MonoBehaviour
 			menu.transform.position = new Vector3 (-0.5f, 2f, 0);
 			//menu.transform.Rotate(60f, 180f, 0);
 			menu.transform.rotation = Quaternion.Euler (60, 90, menu.transform.rotation.eulerAngles.z);
+			Debug.Log ("stena 2, hit=" + nomerBel2);
 		}
 
 		if (nomerBel2 < 19 && nomerBel2 > 9) {
 			menu.transform.position = new Vector3 (0.5f, 2f, 0);
 			//menu.transform.Rotate(60f, 180f, 0);
 			menu.transform.rotation = Quaternion.Euler (60, -90, menu.transform.rotation.eulerAngles.z);
+			Debug.Log ("stena 3, hit=" + nomerBel2);
 		}
 
 		if (nomerBel2 > 27) {
 			menu.transform.position = new Vector3 (0, 2f, 0.5f);
 			//menu.transform.Rotate(60f, 180f, 0);
 			menu.transform.rotation = Quaternion.Euler(menu.transform.rotation.eulerAngles.x, 180, menu.transform.rotation.eulerAngles.z);
-			Debug.Log ("stena 2, hit=" + nomerBel2);
-		}
+			Debug.Log ("stena 4, hit=" + nomerBel2);
+		}*/
 		/*float smooth = 2.0F;
 		float tiltAngle = 30.0F;
 		float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
@@ -211,4 +247,5 @@ public class changeSprite : MonoBehaviour
 		dragKys = !dragKys;
 	}
 }
+
 
