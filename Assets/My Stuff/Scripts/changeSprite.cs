@@ -13,9 +13,12 @@ public class changeSprite : MonoBehaviour
     private GameObject kysok;
     private GameObject tekyw;
     private int nomer = -1;
-    private int nomerBel;
+	private int nomerBel;
+	private int nomerBel2 = 1;
     GameObject everything;
     GameObject video;
+	GameObject o;
+	Vector3 pos;
 
     private int layerMask = 1 << 8;
 	private List<int> usedPuzz = new List<int>();
@@ -27,17 +30,16 @@ public class changeSprite : MonoBehaviour
 
     public void On_Click_Button()
     {
-        
+		o = EventSystem.current.currentSelectedGameObject; 
 		if (estLiKys == false) //если др. картинка в дан. момент не отображается
         { 
             //выставляем картинку на кусочек
-            GameObject o = EventSystem.current.currentSelectedGameObject;
             string str = o.name;
             int.TryParse(str, out nomer);
 
 			if (nomer - 1 <= spr.Length && !usedPuzz.Contains(nomer)) 
             {
-                Vector3 pos = GameObject.Find("CanvasMenu").transform.position;
+                pos = GameObject.Find("CanvasMenu").transform.position;
 				pos.y -= 2f;
                 pos.z += 2f;
 
@@ -82,19 +84,19 @@ public class changeSprite : MonoBehaviour
         }
         else
         { //на второй щелчок
-
-            GameObject o = EventSystem.current.currentSelectedGameObject;
-
+			
             if (tekyw.name == o.name)
             {
 				
 				Destroy (kysok);
 
                 Color myCol = new Color(1F, 1F, 1F, 1F); //возвращаем цвет инвентарю
-                var button = o.GetComponent<Button>();
+                var button = tekyw.GetComponent<Button>(); //o
                 var colors = button.colors;
                 colors.normalColor = myCol;
-                EventSystem.current.currentSelectedGameObject.GetComponent<Button>().colors = colors;
+                tekyw.GetComponent<Button>().colors = colors;
+				//EventSystem.current.currentSelectedGameObject.GetComponent<Button>().colors = colors;
+
 
 				estLiKys = false;
 				dragKys = false;
@@ -136,6 +138,12 @@ public class changeSprite : MonoBehaviour
 				//Debug.Log ("удаление от белой" + dragKys);
 				usedPuzz.Add(nomer); 
 
+				Color myCol2 = new Color(1F, 1F, 1F, 0F);
+				var button2 = tekyw.GetComponent<Button>();
+				var colors2 = button2.colors;
+				colors2.normalColor = myCol2;
+				tekyw.GetComponent<Button>().colors = colors2;
+
 				if (usedPuzz.Count == spr.Length) {
 					Debug.Log ("You are win!");// сюда вставляем показ видео / переход к новой сцене
                     everything.SetActive(false);
@@ -145,9 +153,54 @@ public class changeSprite : MonoBehaviour
 					video.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
 				}
             }
-
-            GameObject ob = EventSystem.current.currentSelectedGameObject;
+				
+            //GameObject ob = EventSystem.current.currentSelectedGameObject;
         }
+
+		Debug.DrawRay (Camera.main.transform.position, Camera.main.transform.forward, Color.magenta);
+
+		Ray camRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward); 
+		RaycastHit hit2;
+		GameObject menu = GameObject.Find ("CanvasMenu");
+
+		if (Physics.Raycast (camRay, out hit2, 1000, layerMask)) {
+
+			string str2 = hit2.transform.name;
+			int.TryParse(str2, out nomerBel2);
+			Debug.Log ("люб стена");
+		}
+
+		if (nomerBel2 < 10) {
+			menu.transform.position = new Vector3 (0, 2f, -0.5f);
+			//menu.transform.Rotate(60f, 0, 0);
+			menu.transform.rotation = Quaternion.Euler(menu.transform.rotation.eulerAngles.x, 0, menu.transform.rotation.eulerAngles.z);
+			Debug.Log ("stena 1, hit=" + nomerBel2);
+		}
+
+		if (nomerBel2 < 28 && nomerBel2 > 18) {
+			menu.transform.position = new Vector3 (-0.5f, 2f, 0);
+			//menu.transform.Rotate(60f, 180f, 0);
+			menu.transform.rotation = Quaternion.Euler (60, 90, menu.transform.rotation.eulerAngles.z);
+		}
+
+		if (nomerBel2 < 19 && nomerBel2 > 9) {
+			menu.transform.position = new Vector3 (0.5f, 2f, 0);
+			//menu.transform.Rotate(60f, 180f, 0);
+			menu.transform.rotation = Quaternion.Euler (60, -90, menu.transform.rotation.eulerAngles.z);
+		}
+
+		if (nomerBel2 > 27) {
+			menu.transform.position = new Vector3 (0, 2f, 0.5f);
+			//menu.transform.Rotate(60f, 180f, 0);
+			menu.transform.rotation = Quaternion.Euler(menu.transform.rotation.eulerAngles.x, 180, menu.transform.rotation.eulerAngles.z);
+			Debug.Log ("stena 2, hit=" + nomerBel2);
+		}
+		/*float smooth = 2.0F;
+		float tiltAngle = 30.0F;
+		float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
+		float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
+		Quaternion target = Quaternion.Euler(tiltAroundX, 0, tiltAroundZ);
+		transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);*/
 
     }
 
