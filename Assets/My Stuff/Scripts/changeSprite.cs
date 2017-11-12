@@ -37,8 +37,9 @@ public class changeSprite : MonoBehaviour
 
 			if (nomer - 1 <= spr.Length && !usedPuzz.Contains(nomer)) 
             {
-				Vector3 pos = GameObject.Find("Reticle").transform.position;
-				pos.y += 1f;
+                Vector3 pos = GameObject.Find("CanvasMenu").transform.position;
+				pos.y -= 2f;
+                pos.z += 2f;
 
 				GameObject pl = GameObject.Find("Player");
 				GameObject pi0 = pl.transform.Find("piece0").gameObject;
