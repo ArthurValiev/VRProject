@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7245687, g: 0.6245435, b: 0.6006107, a: 1}
+  m_IndirectSpecularColor: {r: 0.7239198, g: 0.62335837, b: 0.59606284, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1705,7 +1705,6 @@ GameObject:
   - component: {fileID: 974697224}
   - component: {fileID: 974697223}
   - component: {fileID: 974697222}
-  - component: {fileID: 974697221}
   m_Layer: 5
   m_Name: CanvasMenu
   m_TagString: Untagged
@@ -1713,17 +1712,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &974697221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 974697220}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1241b6d17e7c341e08914fc2ed5f4a4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &974697222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,7 +1804,6 @@ GameObject:
   - component: {fileID: 999429175}
   - component: {fileID: 999429174}
   - component: {fileID: 999429173}
-  - component: {fileID: 999429177}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1903,17 +1890,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.050000012, y: -0.032146096}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.4, y: 0.4}
---- !u!114 &999429177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999429172}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1241b6d17e7c341e08914fc2ed5f4a4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1142876926
 Prefab:
   m_ObjectHideFlags: 0
@@ -2352,7 +2328,6 @@ GameObject:
   - component: {fileID: 1245374244}
   - component: {fileID: 1245374243}
   - component: {fileID: 1245374242}
-  - component: {fileID: 1245374245}
   - component: {fileID: 1245374241}
   m_Layer: 0
   m_Name: Cube aka Sphere
@@ -2427,17 +2402,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1245374245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1245374240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c809b62777c464a99ff3c0ee7d70d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1250827903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,7 +2416,6 @@ GameObject:
   - component: {fileID: 1250827907}
   - component: {fileID: 1250827906}
   - component: {fileID: 1250827905}
-  - component: {fileID: 1250827910}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2549,33 +2512,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1250827910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1250827903}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d115e5cf7acea048a388dc765cec999, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1337709001 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 771218441, guid: 34c21f523e72f45509a4e37ed0293c3b,
-    type: 2}
-  m_PrefabInternal: {fileID: 9659080}
---- !u!114 &1337709006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1337709001}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ffdd6b492f77514ebfb6742615cbe74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1392617349
 GameObject:
   m_ObjectHideFlags: 0
