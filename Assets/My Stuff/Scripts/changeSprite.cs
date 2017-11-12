@@ -113,49 +113,49 @@ public class changeSprite : MonoBehaviour
 
     void Update()
     {
-        
-        Vector3 raycastDir = Vector3.zero;
-        RaycastHit hit;
-        Ray landingRay = new Ray();
+		if (dragKys) {
 
-        raycastDir = kysok.transform.TransformDirection(Vector3.back);
-        landingRay = new Ray(kysok.transform.position, raycastDir);
+			Vector3 raycastDir = Vector3.zero;
+			RaycastHit hit;
+			Ray landingRay = new Ray ();
 
-        if (Physics.Raycast(landingRay, out hit, 1000, layerMask))
-        {
+			raycastDir = kysok.transform.TransformDirection (Vector3.back);
+			landingRay = new Ray (kysok.transform.position, raycastDir);
+
+			if (Physics.Raycast (landingRay, out hit, 1000, layerMask)) {
             
-            string str = hit.transform.name;
-            int.TryParse(str, out nomerBel);
+				string str = hit.transform.name;
+				int.TryParse (str, out nomerBel);
 
-            if ((nomerBel == nomer) && dragKys)
-            {
+				if ((nomerBel == nomer) && dragKys) {
                 
-                hit.transform.gameObject.SetActive(false);
+					hit.transform.gameObject.SetActive (false);
 
-				Destroy (kysok);
-				estLiKys = false;
-				dragKys = false;
-				//Debug.Log ("удаление от белой" + dragKys);
-				usedPuzz.Add(nomer); 
+					Destroy (kysok);
+					estLiKys = false;
+					dragKys = false;
+					//Debug.Log ("удаление от белой" + dragKys);
+					usedPuzz.Add (nomer); 
 
-				Color myCol2 = new Color(1F, 1F, 1F, 0F);
-				var button2 = tekyw.GetComponent<Button>();
-				var colors2 = button2.colors;
-				colors2.normalColor = myCol2;
-				tekyw.GetComponent<Button>().colors = colors2;
+					Color myCol2 = new Color (1F, 1F, 1F, 0F);
+					var button2 = tekyw.GetComponent<Button> ();
+					var colors2 = button2.colors;
+					colors2.normalColor = myCol2;
+					tekyw.GetComponent<Button> ().colors = colors2;
 
-				if (usedPuzz.Count == spr.Length) {
-					Debug.Log ("You are win!");// сюда вставляем показ видео / переход к новой сцене
-                    everything.SetActive(false);
-					GameObject video0 = GameObject.Find("Video");
-					video = video0.transform.Find("VideoSphere").gameObject;
-                    video.SetActive(true);
-					video.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
+					if (usedPuzz.Count == spr.Length) {
+						Debug.Log ("You are win!");// сюда вставляем показ видео / переход к новой сцене
+						everything.SetActive (false);
+						GameObject video0 = GameObject.Find ("Video");
+						video = video0.transform.Find ("VideoSphere").gameObject;
+						video.SetActive (true);
+						video.GetComponent<UnityEngine.Video.VideoPlayer> ().Play ();
+					}
 				}
-            }
 				
-            //GameObject ob = EventSystem.current.currentSelectedGameObject;
-        }
+				//GameObject ob = EventSystem.current.currentSelectedGameObject;
+			}
+		}
 
 		Debug.DrawRay (Camera.main.transform.position, Camera.main.transform.forward, Color.magenta);
 
