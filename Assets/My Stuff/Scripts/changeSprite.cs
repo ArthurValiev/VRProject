@@ -10,6 +10,7 @@ public class changeSprite : MonoBehaviour
     public Sprite[] spr;
 	private bool estLiKys = false;
 	public static bool dragKys = false;
+	private bool looking;
     private GameObject kysok;
     private GameObject tekyw;
     private int nomer = -1;
