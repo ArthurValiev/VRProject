@@ -137,7 +137,7 @@ public class changeSprite : MonoBehaviour
 					//Debug.Log ("удаление от белой" + dragKys);
 					usedPuzz.Add (nomer); 
 
-					Color myCol2 = new Color (1F, 1F, 1F, 0F);
+					Color myCol2 = new Color (0F, 0F, 0F, 0.3F);
 					var button2 = tekyw.GetComponent<Button> ();
 					var colors2 = button2.colors;
 					colors2.normalColor = myCol2;
