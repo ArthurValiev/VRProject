@@ -10,16 +10,20 @@ public class changeSprite : MonoBehaviour
     public Sprite[] spr;
 	private bool estLiKys = false;
 	public static bool dragKys = false;
-	private bool looking;
     private GameObject kysok;
     private GameObject tekyw;
     private int nomer = -1;
 	private int nomerBel;
-	private int nomerBel2 = 1;
     GameObject everything;
     GameObject video;
 	GameObject o;
 	Vector3 pos;
+
+    int prevLook = 0;
+    float timeGoneWrong = 0f;
+
+    private float timeGone = 0.0f;
+    private float enough = 0.5f;
 
     private int layerMask = 1 << 8;
 	private List<int> usedPuzz = new List<int>();
@@ -109,99 +113,141 @@ public class changeSprite : MonoBehaviour
     void Start()
     {
         everything = GameObject.Find("Everything");
-
     }
 
     void Update()
     {
-		if (dragKys) {
+        //if (dragKys)
+        //{
 
-			Vector3 raycastDir = Vector3.zero;
-			RaycastHit hit;
-			Ray landingRay = new Ray ();
+            Vector3 raycastDir = Vector3.zero;
+            RaycastHit hit;
+            Ray landingRay = new Ray();
 
-			raycastDir = kysok.transform.TransformDirection (Vector3.back);
-			landingRay = new Ray (kysok.transform.position, raycastDir);
+            raycastDir = kysok.transform.TransformDirection(Vector3.back);
+            landingRay = new Ray(kysok.transform.position, raycastDir);
 
-			if (Physics.Raycast (landingRay, out hit, 1000, layerMask)) {
-            
-				string str = hit.transform.name;
-				int.TryParse (str, out nomerBel);
+            if (Physics.Raycast(landingRay, out hit, 1000, layerMask))
+            {
 
-				if ((nomerBel == nomer) && dragKys) {
-                
-					hit.transform.gameObject.SetActive (false);
+                string str = hit.transform.name;
+                int.TryParse(str, out nomerBel);
 
-					Destroy (kysok);
-					estLiKys = false;
-					dragKys = false;
-					//Debug.Log ("удаление от белой" + dragKys);
-					usedPuzz.Add (nomer); 
+                if (/*!looking &&*/ nomerBel == nomer)
+                {
+                    //looking = true;
+                    timeGone += Time.deltaTime;
+                    //Debug.Log ("смотрю, timeGone = " + timeGone);
+                    Debug.Log("смотрю");
+                }
 
-					Color myCol2 = new Color (0F, 0F, 0F, 0.3F);
-					var button2 = tekyw.GetComponent<Button> ();
-					var colors2 = button2.colors;
-					colors2.normalColor = myCol2;
-					tekyw.GetComponent<Button> ().colors = colors2;
+                if (prevLook == nomerBel && nomerBel != nomer)
+                {
+                    timeGoneWrong += Time.deltaTime;
+                }
+                else
+                {
+                    timeGoneWrong = 0.0f;
+                }
 
-					if (usedPuzz.Count == spr.Length) {
-						Debug.Log ("You are win!");// сюда вставляем показ видео / переход к новой сцене
-						everything.SetActive (false);
-						GameObject video0 = GameObject.Find ("Video");
-						video = video0.transform.Find ("VideoSphere").gameObject;
-						video.SetActive (true);
-						video.GetComponent<UnityEngine.Video.VideoPlayer> ().Play ();
-					}
-				}
-				
-				//GameObject ob = EventSystem.current.currentSelectedGameObject;
-			}
-		}
+                prevLook = nomerBel;
 
-		Debug.DrawRay (Camera.main.transform.position, Camera.main.transform.forward, Color.magenta);
+            }
+            else
+            {
+                //looking = false;
+                timeGone = 0.0f;
+                timeGoneWrong = 0.0f;
+                Debug.Log("не смотрю");
+            }
 
-		Ray camRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward); 
-		RaycastHit hit2;
-		GameObject menu = GameObject.Find ("CanvasMenu");
+            if (timeGoneWrong >= enough)
+            {
+                Debug.Log("Плохое место!");
+                //float speed = 1f;
+                //kysok.transform.position.x = Mathf.Sin(Time.time * speed);
+                timeGoneWrong = 0.0f;
 
-		if (Physics.Raycast (camRay, out hit2, 1000, layerMask)) {
+            }
 
-			string str2 = hit2.transform.name;
-			int.TryParse(str2, out nomerBel2);
-			Debug.Log ("люб стена");
-		}
+            if (timeGone >= enough /*&& looking*/)
+            {
 
-		if (nomerBel2 < 10) {
-			menu.transform.position = new Vector3 (0, 2f, -0.5f);
-			//menu.transform.Rotate(60f, 0, 0);
-			menu.transform.rotation = Quaternion.Euler(menu.transform.rotation.eulerAngles.x, 0, menu.transform.rotation.eulerAngles.z);
-			Debug.Log ("stena 1, hit=" + nomerBel2);
-		}
+                hit.transform.gameObject.SetActive(false);
 
-		if (nomerBel2 < 28 && nomerBel2 > 18) {
-			menu.transform.position = new Vector3 (-0.5f, 2f, 0);
-			//menu.transform.Rotate(60f, 180f, 0);
-			menu.transform.rotation = Quaternion.Euler (60, 90, menu.transform.rotation.eulerAngles.z);
-		}
+                Destroy(kysok);
+                estLiKys = false;
+                dragKys = false;
+                //Debug.Log ("удаление от белой" + dragKys);
+                usedPuzz.Add(nomer);
+                timeGone = 0.0f;
 
-		if (nomerBel2 < 19 && nomerBel2 > 9) {
-			menu.transform.position = new Vector3 (0.5f, 2f, 0);
-			//menu.transform.Rotate(60f, 180f, 0);
-			menu.transform.rotation = Quaternion.Euler (60, -90, menu.transform.rotation.eulerAngles.z);
-		}
+                Color myCol2 = new Color(0F, 0F, 0F, 0.3F);
+                var button2 = tekyw.GetComponent<Button>();
+                var colors2 = button2.colors;
+                colors2.normalColor = myCol2;
+                tekyw.GetComponent<Button>().colors = colors2;
 
-		if (nomerBel2 > 27) {
-			menu.transform.position = new Vector3 (0, 2f, 0.5f);
-			//menu.transform.Rotate(60f, 180f, 0);
-			menu.transform.rotation = Quaternion.Euler(menu.transform.rotation.eulerAngles.x, 180, menu.transform.rotation.eulerAngles.z);
-			Debug.Log ("stena 2, hit=" + nomerBel2);
-		}
-		/*float smooth = 2.0F;
-		float tiltAngle = 30.0F;
-		float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
-		float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
-		Quaternion target = Quaternion.Euler(tiltAroundX, 0, tiltAroundZ);
-		transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);*/
+                if (usedPuzz.Count == 2 /*spr.Length*/)
+                {
+                    Debug.Log("You are win!");// сюда вставляем показ видео / переход к новой сцене
+                    everything.SetActive(false);
+                    GameObject video0 = GameObject.Find("Video");
+                    video = video0.transform.Find("VideoSphere").gameObject;
+                    video.SetActive(true);
+                    video.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
+                }
+
+                //GameObject ob = EventSystem.current.currentSelectedGameObject;
+            }
+        //}
+
+        //Debug.DrawRay (Camera.main.transform.position, Camera.main.transform.forward, Color.magenta);
+
+        /*Ray camRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward); - рабочий скрипт с поворотом, но есть проблема (не удаляй пока!)
+        RaycastHit hit2;
+        GameObject menu = GameObject.Find ("CanvasMenu");
+
+        if (Physics.Raycast (camRay, out hit2, 1000, layerMask)) {
+
+            string str2 = hit2.transform.name;
+            int.TryParse(str2, out nomerBel2);
+            //Debug.Log ("люб стена");
+        }
+
+        if (nomerBel2 < 10) {
+            menu.transform.position = new Vector3 (0, 2f, -0.5f);
+            //menu.transform.Rotate(60f, 0, 0);
+            menu.transform.rotation = Quaternion.Euler(menu.transform.rotation.eulerAngles.x, 0, menu.transform.rotation.eulerAngles.z);
+            Debug.Log ("stena 1, hit=" + nomerBel2);
+        }
+
+        if (nomerBel2 < 28 && nomerBel2 > 18) {
+            menu.transform.position = new Vector3 (-0.5f, 2f, 0);
+            //menu.transform.Rotate(60f, 180f, 0);
+            menu.transform.rotation = Quaternion.Euler (60, 90, menu.transform.rotation.eulerAngles.z);
+            Debug.Log ("stena 2, hit=" + nomerBel2);
+        }
+
+        if (nomerBel2 < 19 && nomerBel2 > 9) {
+            menu.transform.position = new Vector3 (0.5f, 2f, 0);
+            //menu.transform.Rotate(60f, 180f, 0);
+            menu.transform.rotation = Quaternion.Euler (60, -90, menu.transform.rotation.eulerAngles.z);
+            Debug.Log ("stena 3, hit=" + nomerBel2);
+        }
+
+        if (nomerBel2 > 27) {
+            menu.transform.position = new Vector3 (0, 2f, 0.5f);
+            //menu.transform.Rotate(60f, 180f, 0);
+            menu.transform.rotation = Quaternion.Euler(menu.transform.rotation.eulerAngles.x, 180, menu.transform.rotation.eulerAngles.z);
+            Debug.Log ("stena 4, hit=" + nomerBel2);
+        }*/
+        /*float smooth = 2.0F;
+        float tiltAngle = 30.0F;
+        float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
+        float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
+        Quaternion target = Quaternion.Euler(tiltAroundX, 0, tiltAroundZ);
+        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);*/
 
     }
 
